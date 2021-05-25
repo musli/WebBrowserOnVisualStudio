@@ -1,0 +1,8 @@
+Debug
+bin
+Release
+.msi
+packages
+.suo
+.vs
+/src/WebBrowserOnVisualStudio/WebBrowser/*.user

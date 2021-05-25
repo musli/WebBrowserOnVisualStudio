@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\13414\\SynologyDrive\\Works\\WebBrowserOnVisualStudio\\src\\WebBrowserOnVisualStudio\\WebBrowser\\WebBrowser.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\13414\\SynologyDrive\\Works\\WebBrowserOnVisualStudio\\src\\WebBrowserOnVisualStudio\\WebBrowser.Core\\WebBrowser.Core.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\13414\\SynologyDrive\\Works\\WebBrowserOnVisualStudio\\src\\WebBrowserOnVisualStudio\\WebBrowser.Core\\WebBrowser.Core.csproj",
+        "projectName": "WebBrowser.Core",
+        "projectPath": "C:\\Users\\13414\\SynologyDrive\\Works\\WebBrowserOnVisualStudio\\src\\WebBrowserOnVisualStudio\\WebBrowser.Core\\WebBrowser.Core.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\13414\\SynologyDrive\\Works\\WebBrowserOnVisualStudio\\src\\WebBrowserOnVisualStudio\\WebBrowser\\WebBrowser.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\13414\\SynologyDrive\\Works\\WebBrowserOnVisualStudio\\src\\WebBrowserOnVisualStudio\\WebBrowser\\WebBrowser.csproj",
+        "projectName": "WebBrowser",
+        "projectPath": "C:\\Users\\13414\\SynologyDrive\\Works\\WebBrowserOnVisualStudio\\src\\WebBrowserOnVisualStudio\\WebBrowser\\WebBrowser.csproj",
+        "packagesPath": "C:\\Users\\13414\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\13414\\SynologyDrive\\Works\\WebBrowserOnVisualStudio\\src\\WebBrowserOnVisualStudio\\WebBrowser\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\13414\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://192.168.100.232:8091/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\13414\\SynologyDrive\\Works\\WebBrowserOnVisualStudio\\src\\WebBrowserOnVisualStudio\\WebBrowser.Core\\WebBrowser.Core.csproj": {
+                "projectPath": "C:\\Users\\13414\\SynologyDrive\\Works\\WebBrowserOnVisualStudio\\src\\WebBrowserOnVisualStudio\\WebBrowser.Core\\WebBrowser.Core.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.VSSDK.BuildTools": {
+              "target": "Package",
+              "version": "[16.9.2017, )"
+            },
+            "Microsoft.VisualStudio.SDK": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[16.0.206, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
