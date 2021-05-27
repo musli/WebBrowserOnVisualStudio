@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="WebBrowser.2456d460-e957-4051-8540-229a9cbe4e79" Version="1.0" Language="en-US" Publisher="Web Browser" />
-        <DisplayName>WebBrowser</DisplayName>
+        <Identity Id="WebBrowser.2456d460-e957-4051-8540-229a9cbe4e79" Version="1.0" Language="en-US" Publisher="Musli" />
+        <DisplayName>Web Browser</DisplayName>
         <Description xml:space="preserve">Running web browser in Visual Studio</Description>
+        <MoreInfo>https://github.com/musli/WebBrowserOnVisualStudio</MoreInfo>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
