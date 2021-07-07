@@ -8,7 +8,16 @@
       "restore": {
         "projectUniqueName": "C:\\Users\\13414\\SynologyDrive\\Works\\WebBrowserOnVisualStudio\\src\\WebBrowserOnVisualStudio\\WebBrowser.Core\\WebBrowser.Core.csproj",
         "projectName": "WebBrowser.Core",
-        "projectPath": "C:\\Users\\13414\\SynologyDrive\\Works\\WebBrowserOnVisualStudio\\src\\WebBrowserOnVisualStudio\\WebBrowser.Core\\WebBrowser.Core.csproj"
+        "projectPath": "C:\\Users\\13414\\SynologyDrive\\Works\\WebBrowserOnVisualStudio\\src\\WebBrowserOnVisualStudio\\WebBrowser.Core\\WebBrowser.Core.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\13414\\SynologyDrive\\Works\\WebBrowserOnVisualStudio\\src\\WebBrowserOnVisualStudio\\Win32\\Win32.csproj": {
+                "projectPath": "C:\\Users\\13414\\SynologyDrive\\Works\\WebBrowserOnVisualStudio\\src\\WebBrowserOnVisualStudio\\Win32\\Win32.csproj"
+              }
+            }
+          }
+        }
       },
       "frameworks": {
         "net472": {}
@@ -25,6 +34,7 @@
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
+          "C:\\Users\\13414\\NuGet.Config",
           "C:\\Users\\13414\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +42,8 @@
           "net472"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "http://192.168.100.232:8091/nuget": {},
+          "https://aka.ms/maui-preview/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -71,6 +81,16 @@
         "win-x86": {
           "#import": []
         }
+      }
+    },
+    "C:\\Users\\13414\\SynologyDrive\\Works\\WebBrowserOnVisualStudio\\src\\WebBrowserOnVisualStudio\\Win32\\Win32.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\13414\\SynologyDrive\\Works\\WebBrowserOnVisualStudio\\src\\WebBrowserOnVisualStudio\\Win32\\Win32.csproj",
+        "projectName": "Win32",
+        "projectPath": "C:\\Users\\13414\\SynologyDrive\\Works\\WebBrowserOnVisualStudio\\src\\WebBrowserOnVisualStudio\\Win32\\Win32.csproj"
+      },
+      "frameworks": {
+        "net472": {}
       }
     }
   }

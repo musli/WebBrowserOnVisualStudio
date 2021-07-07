@@ -4,10 +4,12 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
          xmlns:wpf="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+      xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+      xmlns:wfi ="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
       xmlns:local="clr-namespace:WebBrowser.Core"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="HomePage" SizeChanged="Page_SizeChanged">
+      Title="HomePage" SizeChanged="Page_SizeChanged" >
     <Page.Resources>
         <ResourceDictionary>
             <RoutedCommand x:Key="Go"/>
@@ -36,17 +38,37 @@
             <Button Content="Ba" ToolTip="Back" Command="{Binding ElementName=Browser, Path=BackCommand}"></Button>
             <Button Content="Fo" ToolTip="Forward" Grid.Column="2" Command="{Binding ElementName=Browser, Path=ForwardCommand}"></Button>
             <Button Content="Re" ToolTip="Refresh" Grid.Column="4" Command="{Binding ElementName=Browser, Path=ReloadCommand}"></Button>
+            <Button Grid.Column="2" Click="Button_Click_4"></Button>
+            <Button Grid.Column="4" Click="Button_Click_3"></Button>
             <TextBox x:Name="txtAddress" Grid.Column="6" Text="{Binding ElementName=Browser, Path=Address, Mode=OneWay}" VerticalContentAlignment="Center">
                 <TextBox.InputBindings>
                     <KeyBinding  Key="Enter" Command="{StaticResource Go}" ></KeyBinding>
                 </TextBox.InputBindings>
             </TextBox>
         </Grid>
-        <Viewbox Grid.Row="1">
-        </Viewbox>
-        <wpf:ChromiumWebBrowser  Grid.Row="1" Opacity="1" x:Name="Browser" Address="www.bing.com" PreviewMouseWheel="Browser_PreviewMouseWheel" >
-            <wpf:ChromiumWebBrowser.InputBindings>
-            </wpf:ChromiumWebBrowser.InputBindings>
-        </wpf:ChromiumWebBrowser>
+        <Grid Grid.Row="1" x:Name="cont">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <wpf:ChromiumWebBrowser  Grid.Row="1" x:Name="Browser"  Opacity="{Binding ElementName=sliOp, Path=Value}" Address="www.baidu.com" PreviewMouseWheel="Browser_PreviewMouseWheel"  >
+                <wpf:ChromiumWebBrowser.ContextMenu>
+                    <ContextMenu x:Name="menu">
+                        <MenuItem Header="Open Dev Tools" Click="MenuItem_Click"></MenuItem>
+                        <MenuItem>
+                            <MenuItem.Header>
+                                <Slider Width="80" x:Name="sliOp" Maximum="1" Minimum="0.01" TickFrequency="0.01" Value="1"></Slider>
+                            </MenuItem.Header>
+                        </MenuItem>
+                    </ContextMenu>
+                </wpf:ChromiumWebBrowser.ContextMenu>
+                <wpf:ChromiumWebBrowser.InputBindings>
+                </wpf:ChromiumWebBrowser.InputBindings>
+            </wpf:ChromiumWebBrowser>
+            <wfi:WindowsFormsHost x:Name="panelGrid" Grid.Column="1">
+                <wf:Panel x:Name="panel"></wf:Panel>
+            </wfi:WindowsFormsHost>
+            <Grid Grid.Column="1" x:Name="grid"></Grid>
+        </Grid>
     </Grid>
 </Page>

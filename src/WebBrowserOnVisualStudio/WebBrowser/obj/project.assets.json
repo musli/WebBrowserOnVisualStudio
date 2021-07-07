@@ -1250,11 +1250,23 @@
       },
       "WebBrowser.Core/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "Win32": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/WebBrowser.Core.dll": {}
         },
         "runtime": {
           "bin/placeholder/WebBrowser.Core.dll": {}
+        }
+      },
+      "Win32/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Win32.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Win32.dll": {}
         }
       }
     },
@@ -2483,11 +2495,23 @@
       },
       "WebBrowser.Core/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "Win32": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/WebBrowser.Core.dll": {}
         },
         "runtime": {
           "bin/placeholder/WebBrowser.Core.dll": {}
+        }
+      },
+      "Win32/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Win32.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Win32.dll": {}
         }
       }
     },
@@ -3716,11 +3740,23 @@
       },
       "WebBrowser.Core/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "Win32": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/WebBrowser.Core.dll": {}
         },
         "runtime": {
           "bin/placeholder/WebBrowser.Core.dll": {}
+        }
+      },
+      "Win32/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Win32.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Win32.dll": {}
         }
       }
     },
@@ -4949,11 +4985,23 @@
       },
       "WebBrowser.Core/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "Win32": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/WebBrowser.Core.dll": {}
         },
         "runtime": {
           "bin/placeholder/WebBrowser.Core.dll": {}
+        }
+      },
+      "Win32/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Win32.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Win32.dll": {}
         }
       }
     }
@@ -7011,6 +7059,11 @@
       "type": "project",
       "path": "../WebBrowser.Core/WebBrowser.Core.csproj",
       "msbuildProject": "../WebBrowser.Core/WebBrowser.Core.csproj"
+    },
+    "Win32/1.0.0": {
+      "type": "project",
+      "path": "../Win32/Win32.csproj",
+      "msbuildProject": "../Win32/Win32.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7034,6 +7087,7 @@
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
+        "C:\\Users\\13414\\NuGet.Config",
         "C:\\Users\\13414\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7041,8 +7095,8 @@
         "net472"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "http://192.168.100.232:8091/nuget": {},
+        "https://aka.ms/maui-preview/index.json": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7087,7 +7141,7 @@
       "code": "NU1603",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "WebBrowser 依赖于 Microsoft.VSSDK.BuildTools (>= 16.9.2017)，但找不到 Microsoft.VSSDK.BuildTools 16.9.2017。 已解决 Microsoft.VSSDK.BuildTools 16.10.7 的近似最佳匹配。 ",
+      "message": "WebBrowser depends on Microsoft.VSSDK.BuildTools (>= 16.9.2017) but Microsoft.VSSDK.BuildTools 16.9.2017 was not found. An approximate best match of Microsoft.VSSDK.BuildTools 16.10.7 was resolved.",
       "libraryId": "Microsoft.VSSDK.BuildTools",
       "targetGraphs": [
         ".NETFramework,Version=v4.7.2",

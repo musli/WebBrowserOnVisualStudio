@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WebBrowser.Core"
          xmlns:wpf="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindowMainWindowMainWindowMainWindowMainWindowMainWindowMainWindowMainWindowMainWindowMainWindowMainWindowMainWindowMainWindowMainWindow" Height="450" Width="800">
     <Grid>
         <Frame Source="/WebBrowser.Core;component/HomePage.xaml" ></Frame>
     </Grid>

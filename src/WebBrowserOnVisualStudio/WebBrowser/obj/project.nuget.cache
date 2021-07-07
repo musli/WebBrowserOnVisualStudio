@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cyM6HOZlcMqwybLBV4y7jhApkJWE78KFyrsPTSbO0WzP125tlTed7ZFvQwfVT4rHXqckgTZFAruzZYbW3zWg4w==",
+  "dgSpecHash": "Fz6perPScwrPwrZi2Muh0FPvbaC5KowakBlLHyVEJSgAEPQ0HHFb2w2/2qHpdfKQy2xGQdKp+QqdFZ9PTRZ+dQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\13414\\SynologyDrive\\Works\\WebBrowserOnVisualStudio\\src\\WebBrowserOnVisualStudio\\WebBrowser\\WebBrowser.csproj",
   "expectedPackageFiles": [
@@ -110,7 +110,7 @@
       "code": "NU1603",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "WebBrowser 依赖于 Microsoft.VSSDK.BuildTools (>= 16.9.2017)，但找不到 Microsoft.VSSDK.BuildTools 16.9.2017。 已解决 Microsoft.VSSDK.BuildTools 16.10.7 的近似最佳匹配。 ",
+      "message": "WebBrowser depends on Microsoft.VSSDK.BuildTools (>= 16.9.2017) but Microsoft.VSSDK.BuildTools 16.9.2017 was not found. An approximate best match of Microsoft.VSSDK.BuildTools 16.10.7 was resolved.",
       "libraryId": "Microsoft.VSSDK.BuildTools",
       "targetGraphs": [
         ".NETFramework,Version=v4.7.2",
